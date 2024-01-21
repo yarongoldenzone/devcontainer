@@ -2,7 +2,7 @@ FROM "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye"
 
 RUN mkdir -p /opt/app
 WORKDIR /opt/app
-COPY src/package.json src/package-lock.json .
+COPY package.json package-lock.json .
 RUN npm install
 # COPY src/ .
 EXPOSE 3000
